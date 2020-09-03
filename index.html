@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-US-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 70px;
+            background: #333;
+            color: white;
+        }
+    </style>
+    <title>Weight Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-5">Weight Converter</h1>
+                <h2 class="display-5 text-center mb-3">Input</h2>
+                <!-- Input Form -->
+                <form class="input mb-5">
+                    <div class="form-group">
+                        <input
+                        id="inputField"
+                        type="number"
+                        class="form-control form-control-lg"
+                        placeholder="">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="input"
+                        id="input-grams"
+                        value="input-grams"
+                        checked>
+                        <label class="form-check-label" for="input-grams">
+                            Grams
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="input"
+                        id="input-kilograms"
+                        value="input-kilograms">
+                        <label class="form-check-label" for="input-kilograms">
+                            Kilograms
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="input"
+                        id="input-pounds"
+                        value="input-pounds">
+                        <label class="form-check-label" for="input-pounds">
+                            Pounds
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="input"
+                        id="input-ounces"
+                        value="input-ounces">
+                        <label class="form-check-label" for="input-ounces">
+                            Ounces
+                        </label>
+                    </div>
+                </form>
+                <h2 class="display-5 text-center mb-4">Convert To</h2>
+                <!-- Output Form -->
+                <form class="input mb-4">
+                    <div class="form-check form-check-inline">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="output"
+                        id="output-grams"
+                        value="output-grams"
+                        checked>
+                        <label class="form-check-label" for="output-grams">
+                            Grams
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="output"
+                        id="output-kilograms"
+                        value="output-kilograms">
+                        <label class="form-check-label" for="output-kilograms">
+                            Kilograms
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="output"
+                        id="output-pounds"
+                        value="output-pounds">
+                        <label class="form-check-label" for="output-pounds">
+                            Pounds
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="output"
+                        id="output-ounces"
+                        value="output-ounces">
+                        <label class="form-check-label" for="output-ounces">
+                            Ounces
+                        </label>
+                    </div>
+                </form>
+                <button type="button" id="calculate" class="btn btn-light mb-3">Calculate</button>
+                <div id="output">
+                    <div class="card bg-success mb-2" id="results-card">
+                        <div class="card-body">
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
